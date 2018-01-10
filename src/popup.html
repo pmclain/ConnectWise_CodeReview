@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Toggl PR</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Toggl PR</h1>
+        <div id="toggl">
+            <button id="edit-key">Edit Toggl Key</button>
+            <div id="toggl-form" class="hidden">
+                <div class="input">
+                    <label for="toggl-key">Toggl API Key</label>
+                    <input id="toggl-key" type="text">
+                </div>
+                <button id="save-toggl">Save</button>
+            </div>
+        </div>
+        <div id="pull-request">
+            <div class="input">
+                <label for="description">Description</label>
+                <input id="description" type="text">
+            </div>
+            <div class="input">
+                <label for="ticket">CW Ticket</label>
+                <input id="ticket" type="text">
+            </div>
+            <button id="start">Start Review</button>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

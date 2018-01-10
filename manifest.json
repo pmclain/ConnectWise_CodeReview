@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+
+    "name": "PR Toggl",
+    "description": "Create Toggl entries for ConnectWise from GitHub pull requests.",
+    "version": "1.0.0",
+
+    "browser_action": {
+        "default_icon": "src/img/icon.png",
+        "default_popup": "src/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://github.com/*/pull/*"
+            ],
+            "js": [
+                "src/js/content/gh.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage",
+        "https://www.toggl.com/"
+    ]
+}
